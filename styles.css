@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rubik:wght@300&display=swap');
+
+:root {
+    --dark-text: rgb(30, 27, 27);
+    --light-text: rgb(255, 255, 255);
+    --dark-bg: gray;
+    --light-bg: white;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+body .img {
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 110%;
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    z-index: -1;
+    filter: blur(3px);
+}
+
+p {
+    display: inline;
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: white;
+}
+.input-bar button{
+    color: aquamarine;
+}
+
+.item-card button:hover{
+    cursor: pointer;
+    transform: scale(90%);
+    color: red;
+}
+.input-bar button:hover{
+    cursor: pointer;
+    transform: scale(90%);
+    color: green;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px -5px;
+    background-color: var(--light-bg);
+    padding: 20px;
+}
+
+.main-card {
+    min-width: 320px;
+    margin-top: 30px;
+    max-height: 70%;
+    overflow: auto;
+}
+
+input[type=text] {
+    border: none;
+    outline: none;
+}
+
+.input-bar {
+    display: flex;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin: 20px 0;
+    height: 50px;
+}
+.input-bar button{
+    background-color: none;
+    padding-right: 10px;
+}
+.input-bar i{
+    height: 100%;
+    font-size: 45px;
+}
+
+
+.input-bar .todo-input {
+    background-color: rgba(237, 191, 191, 0.3);
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    width: 100%;
+    margin-right: auto;
+}
+
+.item-card {
+    display: flex;
+    justify-content: start;
+    height: 40px;
+    background-color: rgb(139, 192, 238);
+    padding: 5px;
+    box-shadow: none;
+    margin: 5px 0;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+.item-card button {
+    margin-left: auto;
+}
+
+.item-card i {
+    font-size: 20px;
+}
+
+.container {
+    padding: 30px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: rgb(187, 16, 16);
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-brand {
+    margin-left: 30px;
+    font-size: 35px;
+    color: aliceblue;
+}
