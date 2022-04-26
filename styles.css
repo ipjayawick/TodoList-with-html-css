@@ -18,6 +18,7 @@
 body {
     height: 100vh;
     font-family: 'Rubik', sans-serif;
+    overflow: hidden;
 }
 
 body .img {
