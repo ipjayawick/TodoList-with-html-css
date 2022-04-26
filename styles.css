@@ -18,7 +18,7 @@
 body {
     height: 100vh;
     font-family: 'Rubik', sans-serif;
-    overflow: hidden;
+
 }
 
 body .img {
@@ -149,6 +149,7 @@ input[type=text] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: auto;
 }
 
 .nav-brand {
